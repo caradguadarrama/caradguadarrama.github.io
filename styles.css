@@ -45,6 +45,10 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    flex-wrap: wrap; /* Las opciones del menú también deben poder bajar */
+    justify-content: center;
+    width: auto; 
+    max-width: 100%;
 }
 
 .navbar ul li a {
@@ -127,7 +131,6 @@ h3 {
 
 .section-label {
     font-family: var(--font-serif);
-
     text-align: center;
     font-size: 6rem;
     margin-bottom: 20px;
@@ -153,7 +156,11 @@ h3 {
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
-    
+    padding: 20px; /* Reducido de 56px */
+    gap: 20px;    /* Reducido de 50px */
+    flex-wrap: wrap; /* ESENCIAL para que los iconos no se salgan */
+    justify-content: center;
+    width: 100%;
 }
 
 .tech-icons :hover {
@@ -239,7 +246,12 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
+    padding:9px; /* Reducido de 56px */
+    gap: 2rem;
+    flex-wrap: wrap; /* Las opciones del menú también deben poder bajar */
+    justify-content: center;
+    width: auto; 
+    max-width: 100%;
 }
 
 .footer-content {
@@ -261,6 +273,10 @@ h3 {
     display: flex;
     list-style: none;
     gap: 2rem;
+    flex-wrap: wrap; /* Las opciones del menú también deben poder bajar */
+    justify-content: center;
+    width: auto; 
+    max-width: 100%;
 }
 
 .footer ul li a {
