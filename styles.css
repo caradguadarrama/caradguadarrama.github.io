@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
+    padding: 1.5rem 5%;
 }
 
 .logo {
@@ -37,14 +37,11 @@ body {
 }
 
 .navbar ul {
-     background: rgba(255, 255, 255, 0.055); /* Transparencia blanca */
-  backdrop-filter: blur(10px); /* Desenfoque del fondo */
-  -webkit-backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
-  border-radius: 20px;
-  padding: 18px;
-  color: rgb(12, 0, 0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 0, 0, 0.055);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 12px;
     display: flex;
     list-style: none;
     gap: 2rem;
@@ -151,7 +148,6 @@ h3 {
   border: 1.5px solid rgba(255, 255, 255, 0.2); 
   border-radius: 20px;
   padding: 56px;
-  color: rgb(12, 0, 0);
     display: flex;
     gap: 50px;
     font-weight: bold;
