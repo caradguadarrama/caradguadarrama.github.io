@@ -1,8 +1,7 @@
 :root {
     --bg-color: #ffffff;
     --text-main: #333333;
-    --text-muted: #ffffff;;
-    --accent-blue: #d9e4e8; /* El color del círculo en la imagen */
+    --text-muted: #ffffff;
     --font-serif: 'DM Serif Display', serif;
     --font-sans: 'Urbanist', sans-serif;
 }
@@ -13,42 +12,52 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
     font-family: var(--font-sans);
-    font-size: 1.3rem;
     line-height: 1.6;
+    font-size: 1rem;
+    overflow-x: hidden;
 }
 
 /* Header / Navbar */
 .navbar {
-   background-image: url(media/background.jpg);
-    border-radius:40px;
+    background-image: url(media/background.jpg);
+    border-radius: 33px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .logo {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .navbar ul {
     background: rgba(255, 0, 0, 0.055);
     backdrop-filter: blur(10px);
-    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    padding: 12px;
     display: flex;
     list-style: none;
     gap: 2rem;
-    flex-wrap: wrap; /* Las opciones del menú también deben poder bajar */
+    flex-wrap: wrap;
+    /* Las opciones del menú también deben poder bajar */
     justify-content: center;
-    width: auto; 
+    width: auto;
     max-width: 100%;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 8px;
 }
 
 .navbar ul li a {
@@ -62,45 +71,54 @@ body {
     color: var(--text-main);
 }
 
-/* Hero Section */
+
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: auto;
+    padding-top: 100px;
 }
 
 .hero-title {
-    font-family:'DM Serif Display', serif;
-    font-size:2.9rem;
-    font-weight:400;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
     color: #333333;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+    line-height: 1.2;
 }
 
-/* Layout Principal */
+
 .hero-content {
- display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 200px;
 }
 
-/* Tipografía General */
+
+.subtitle {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 900;
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+
 .profile-img {
-    border-radius: 40px;
+    border-radius: 33px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.subtitle {
-    font-size: larger;
-    font-weight: 900;
-    text-align: center;
-    color: var(--text-secondary);
-    margin-bottom: 40px;
+
+.profile-img-container{
+    width: 480px;
+    height: 480px;
 }
 
-/* Info Groups */
+
 .info-grid {
     display: flex;
     gap: 40px;
@@ -115,7 +133,8 @@ h3 {
     letter-spacing: 1px;
 }
 
-.info-group p, .contact-box p {
+.info-group p,
+.contact-box p {
     font-size: 0.95rem;
     text-align: center;
     color: var(--text-secondary);
@@ -125,8 +144,8 @@ h3 {
 
 /* Contenedor principal SKILLS */
 .skills-section {
-    margin-top: 145px;
-    padding-bottom: 100px;
+    margin-top: 180px;
+    padding-bottom: 9px;
 }
 
 .section-label {
@@ -146,19 +165,19 @@ h3 {
 }
 
 .tech-icons {
-     background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1.5px solid rgba(255, 255, 255, 0.2); 
-  border-radius: 20px;
-  padding: 56px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 56px;
     display: flex;
     gap: 50px;
     font-weight: bold;
     font-size: 1.5rem;
     color: white;
-    padding: 20px; /* Reducido de 56px */
-    gap: 20px;    /* Reducido de 50px */
-    flex-wrap: wrap; /* ESENCIAL para que los iconos no se salgan */
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
@@ -171,7 +190,7 @@ h3 {
 .skills-columns {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:(1fr, 1fr);
     gap: 20px;
 }
 
@@ -179,7 +198,8 @@ h3 {
 /* --- Featured Work --- */
 
 .projects {
-    padding: 100px 0; /* Eliminamos padding lateral para que las barras lleguen a los bordes si es necesario */
+    padding: 100px 0;
+    /* Eliminamos padding lateral para que las barras lleguen a los bordes si es necesario */
     background-color: var(--bg-color);
 }
 
@@ -187,15 +207,19 @@ h3 {
     font-family: var(--font-serif);
     font-size: 6rem;
     margin-bottom: 50px;
-    padding-left: 5%; /* Alineado con el contenedor general */
+    padding-left: 5%;
+    /* Alineado con el contenedor general */
     color: var(--text-main);
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas exactas */
-    min-height: 600px; /* Altura de las columnas */
-    gap: 0; /* Sin espacio entre columnas según la imagen */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas exactas */
+    min-height: 600px;
+    /* Altura de las columnas */
+    gap: 0;
+    /* Sin espacio entre columnas según la imagen */
 }
 
 .project-card {
@@ -204,10 +228,12 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px; /* Espacio superior para el texto */
+    padding-top: 60px;
+    /* Espacio superior para el texto */
     text-align: center;
     transition: transform 0.3s ease;
-    color: #ffffff; /* Todo el texto en las cards es blanco */
+    color: #ffffff;
+    /* Todo el texto en las cards es blanco */
 }
 
 .project-card:hover {
@@ -216,10 +242,21 @@ h3 {
 }
 
 /* Colores de fondo por proyecto */
-.ixel { background-color: #261914; }
-.truper { background-color: #eb6e3d; }
-.g-marketing { background-color: #ff2323; }
-.roybad { background-color: #e21c8c; }
+.ixel {
+    background-color: #261914;
+}
+
+.truper {
+    background-color: #eb6e3d;
+}
+
+.g-marketing {
+    background-color: #ff2323;
+}
+
+.roybad {
+    background-color: #e21c8c;
+}
 
 .project-card h3 {
     font-family: var(--font-sans);
@@ -227,7 +264,8 @@ h3 {
     font-weight: 700;
     line-height: 1;
     margin-bottom: 30px;
-    text-transform: none; /* Mantenemos el estilo de la imagen */
+    text-transform: none;
+    /* Mantenemos el estilo de la imagen */
 }
 
 .project-card p {
@@ -241,16 +279,18 @@ h3 {
 
 /* footer */
 .footer {
-   background-image: url(media/background.jpg);
-    border-radius:40px 40px 0 0;
+    background-image: url(media/background.jpg);
+    border-radius: 40px 40px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:9px; /* Reducido de 56px */
+    padding: 9px;
+    /* Reducido de 56px */
     gap: 2rem;
-    flex-wrap: wrap; /* Las opciones del menú también deben poder bajar */
+    flex-wrap: wrap;
+    /* Las opciones del menú también deben poder bajar */
     justify-content: center;
-    width: auto; 
+    width: auto;
     max-width: 100%;
 }
 
@@ -263,19 +303,19 @@ h3 {
 }
 
 .footer ul {
-     background: rgba(255, 255, 255, 0.055); 
-  backdrop-filter: blur(10px); 
-  border: 1.5px solid rgba(255, 255, 255, 0.2); 
-  border-radius:20px ;
-  padding: 18px;
-  color: rgb(12, 0, 0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 18px;
+    color: rgb(12, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     list-style: none;
     gap: 2rem;
-    flex-wrap: wrap; /* Las opciones del menú también deben poder bajar */
+    flex-wrap: wrap;
     justify-content: center;
-    width: auto; 
+    width: auto;
     max-width: 100%;
 }
 
@@ -290,15 +330,29 @@ h3 {
     color: var(--text-main);
 }
 
+
+/* --- FOOTER --- */
+.footer-content {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        font-size: 3.9rem;
+    }
+}
+
 /* Ajuste Responsivo para móviles */
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Una columna en móvil */
+        grid-template-columns: 1fr;
     }
+
     .project-card {
         padding: 60px 20px;
         min-height: 300px;
     }
+
     .projects h2 {
         font-size: 3rem;
     }
