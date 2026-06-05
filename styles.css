@@ -25,7 +25,15 @@ body {
     overflow-x: hidden;
 }
 
-/* Header / Navbar */
+/* Header */
+
+.logo {
+    font-weight: 350;
+    font-size: 3rem;
+    text-align: left;
+}
+
+/* Navbar */
 .navbar {
     background-image: url(media/background.jpg);
     border-radius: 33px;
@@ -37,11 +45,6 @@ body {
     padding: 1rem;
 }
 
-.logo {
-    font-weight: 300;
-    font-size: 3rem;
-}
-
 .navbar ul {
     background: rgba(255, 0, 0, 0.055);
     backdrop-filter: blur(10px);
@@ -51,7 +54,7 @@ body {
     list-style: none;
     gap: 2rem;
     flex-wrap: wrap;
-    /* Las opciones del menú también deben poder bajar */
+    
     justify-content: center;
     width: auto;
     max-width: 100%;
