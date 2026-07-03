@@ -35,7 +35,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-image: url(media/background.jpg);
+    background-image: url(media/bg\ wb.jpg);
     border-radius: 33px;
     display: flex;
     justify-content: space-between;
@@ -46,9 +46,9 @@ body {
 }
 
 .navbar ul {
-    background: rgba(255, 0, 0, 0.055);
+    background: rgba(51, 48, 48, 0.055);
     backdrop-filter: blur(10px);
-    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     display: flex;
     list-style: none;
@@ -159,7 +159,7 @@ h3 {
 }
 
 .skills-banner {
-    background-image: url(media/background.jpg);
+    background-image: url(media/bg\ wb.jpg);
     padding: 40px;
     border-radius: 30px;
     margin-bottom: 40px;
@@ -268,7 +268,7 @@ h3 {
     line-height: 1;
     margin-bottom: 30px;
     text-transform: none;
-    /* Mantenemos el estilo de la imagen */
+   
 }
 
 .project-card p {
@@ -282,7 +282,7 @@ h3 {
 
 /* footer */
 .footer {
-    background-image: url(media/background.jpg);
+    background-image: url(media/bg\ wb.jpg);
     border-radius: 40px 40px 0 0;
     display: flex;
     justify-content: space-between;
@@ -306,7 +306,7 @@ h3 {
 }
 
 .footer ul {
-    background: rgba(255, 255, 255, 0.055);
+    background: rgba(160, 158, 158, 0.404);
     backdrop-filter: blur(10px);
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
