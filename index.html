@@ -4,160 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Adrian FullstackDev</title>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="description" content="Carlos Adrian Guadarrama — UX/UI designer and front-end developer based in Ciudad de México. Portfolio, experience and contact.">
+    <title>Carlos Adrian Guadarrama — UX/UI Designer &amp; Developer</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
-
-    
-
 </head>
 
 <body>
-    <header>
-    <h1 class="logo">Hello world</h1>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a class="logo" href="#top" aria-label="Carlos Adrian Guadarrama — back to top">
+                <span class="logo-mark">CA</span>
+                <span class="logo-word">Guadarrama</span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="#about" data-nav-link>About</a></li>
+                    <li><a href="#skills" data-nav-link>Skills</a></li>
+                    <li><a href="#work" data-nav-link>Experience</a></li>
+                    <li><a href="#contact" data-nav-link>Contact</a></li>
+                </ul>
+                <ul class="nav-social">
+                    <li><a href="https://github.com/caradguadarrama" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/carlosaguadarrama/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.behance.net/gallery/231107607/CREATIVE-PORTFOLIO" target="_blank" rel="noopener">Behance</a></li>
+                    <li><a class="nav-cta" href="https://drive.google.com/file/d/127hzUkskkWwn6q4sKVj9PHwUbSVT4kI9/view?usp=sharing" target="_blank" rel="noopener">Résumé</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <navbar class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://drive.google.com/file/d/127hzUkskkWwn6q4sKVj9PHwUbSVT4kI9/view?usp=sharing" target="_blank">Resume</a></li>
-                <li><a href="https://github.com/caradguadarrama" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/carlosaguadarrama/" target="_blank">Linkedin</a></a></li>
-                <li><a href="https://www.behance.net/gallery/231107607/CREATIVE-PORTFOLIO" target="_blank">Behance</a></li>
-            </ul>
-        </nav>
-    </navbar>
 
-    <main class="container">
-        <section class="hero-title">
-           <h2>Hi, I'm Carlos Adrian.<br> I design and build digital experiences.</h2>
-
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero-inner">
+                <p class="hero-greeting" id="hero-greeting" aria-live="polite">Hello</p>
+                <h1 class="hero-title">
+                    <span class="hero-line">Interfaces that hold up</span>
+                    <span class="hero-line">when the code runs.</span>
+                </h1>
+                <p class="hero-sub">
+                    I'm Adrian — a UX/UI designer and front-end developer based in Ciudad de México.
+                    I move between Figma and the codebase, so what gets designed is what actually ships.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#work">See my experience</a>
+                    <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+                <span></span>
+            </a>
         </section>
-        <section class="hero-content" id="about-me">
-            <p class="subtitle">I'm a fullstack developer & UX UI architect</p>
-                <div class="profile-img-container">
-                    <img src="assets/media/profilepic.jpg" alt="My photo" class="profile-img">
+
+        <section class="about" id="about">
+            <div class="section-inner about-grid">
+                <div class="about-media">
+                    <div class="about-img-frame">
+                        <img src="assets/media/pic" alt="Portrait of Carlos Adrian Guadarrama" class="about-img" loading="lazy">
+                    </div>
                 </div>
 
-            <div class="content-column" >             
-                        <div class="info-group">
-                            <h3>My background:</h3>
-                            <p>Fullstack Software Developer Bootcamp</p>
-                            <p>Bachelor's degree in Communication & Journalism</p>
-                            <p>4+ years of experience in Project management, UI writing, Design <br>
-                                and Product Development</p>
+                <div class="about-content">
+                    <p class="eyebrow">About</p>
+                    <h2 class="section-title">Design and code, handled by the same person.</h2>
+                    <p class="about-lead">
+                        Four-plus years working across UI/UX design, front-end development, project
+                        management and digital brand analytics — first as a journalist by training,
+                        now building and shipping product.
+                    </p>
+
+                    <div class="about-facts">
+                        <div class="fact-group">
+                            <h3>Background</h3>
+                            <ul>
+                                <li>Full Stack Java Bootcamp — Generation</li>
+                                <li>Bachelor's in Communication &amp; Journalism — UNAM</li>
+                                <li>UX/UI, project management, product &amp; content analytics</li>
+                            </ul>
                         </div>
 
-                        <div class="info-group">
-                            <h3>Certified in:</h3>
-                            <p>UI and UX Design</p>
-                            <p>Data analytics</p>
-                            <p>SEO and Content Marketing</p>
+                        <div class="fact-group">
+                            <h3>Certified in</h3>
+                            <ul>
+                                <li>UX/UI Design with Figma — Platzi</li>
+                                <li>Google Data Analytics Professional — Coursera</li>
+                                <li>SEO and Content Marketing</li>
+                            </ul>
                         </div>
-                  
+
+                        <div class="fact-group">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Spanish — native</li>
+                                <li>English — B2</li>
+                                <li>French — reading</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="contact-box">
-                        <h3>Contact</h3>
-                        <p>caguadarramag@gmail.com</p>
-                        <p>linkedin.com/in/carlosaguadarrama/</p>
+                        <h3>Based in</h3>
+                        <p>Ciudad de México &middot; open to relocation</p>
+                        <a href="mailto:caguadarramag@gmail.com">caguadarramag@gmail.com</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills-section" id="skills">
-            <h2 class="section-label">My skills</h2>
-            <div class="skills-banner">
-                <div class="tech-icons">
-                    <img src="assets/media/icons/java-4-logo-svgrepo-com.svg" width="100px" height="100px" alt="Java">
-                    <img src="assets/media/icons/javascript-fill-svgrepo-com.svg" width="100px" height="100px" alt="JavaScript">
-                    <img src="assets/media/icons/sql-svgrepo-com.svg" width="100px" height="100px"  alt="SQL">
-                    <img src="assets/media/icons/git-svgrepo-com.svg" width="100px" height="100px" alt="Git">
-                    <img src="assets/media/icons/css-wizardry-svgrepo-com.svg" width="100px" height="100px" alt="CSS">
-                    <img src="assets/media/icons/html5-02-svgrepo-com.svg" width="100px" height="100px" alt="HTML5">
-        
-                </div>
-            </div>
+        <section class="skills" id="skills">
+            <div class="section-inner">
+                <p class="eyebrow">Skills</p>
+                <h2 class="section-title">What I work with.</h2>
 
-            <div class="skills-columns">
-                <div class="skill-col">
-                    <h3>Languages</h3>
-                    <p>Java, R, JavaScript</p>
-                </div>
-                <div class="skill-col">
-                    <h3>Backend</h3>
-                    <p>Springboot, Node.js</p>
-                </div>
-                <div class="skill-col">
-                    <h3>Data Bases</h3>
-                    <p>MySQL, GoogleCloud SQL</p>
-                </div>
-                <div class="skill-col">
-                    <h3>Frontend</h3>
-                    <p>HTML5, CSS, Bootstrap</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Design</h3>
+                        <ul class="tag-list">
+                            <li>Adobe Creative</li>
+                            <li>Figma</li>
+                            <li>UX research</li>
+                            <li>Usability testing</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul class="tag-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <ul class="tag-list">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Data</h3>
+                        <ul class="tag-list">
+                            <li>SQL</li>
+                            <li>MySQL</li>
+                            <li>Google Cloud SQL</li>
+                            <li>R</li>
+                            <li>Google Data Analytics</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-       
 
-        <section class="projects" id="projects">
-    <h2>Featured Work</h2>
-    <div class="projects-grid">
-        <div class="project-card ixel">
-            <div class="card-content">
-                <h3>Ixel<br>Artesanias</h3>
-                <p>Fullstack developer<br>UX lead</p>
+        <section class="work" id="work">
+            <div class="section-inner">
+                <p class="eyebrow">Experience</p>
+                <h2 class="section-title">Where I've worked.</h2>
+
+                <ol class="work-list">
+                    <li class="work-row work-row--ixel">
+                        <span class="work-index"></span>
+                        <div class="work-main">
+                            <h3>Ixel Artesanías</h3>
+                            <p class="work-role">Fullstack Developer &amp; UX Lead</p>
+                        </div>
+                        <span class="work-meta">App</span>
+                    </li>
+
+                    <a class="work-row work-row--truper" href="https://www.truper.com" target="_blank" rel="noopener">
+                        <span class="work-index"></span>
+                        <div class="work-main">
+                            <h3>Grupo Truper</h3>
+                            <p class="work-role">Product Designer Jr.</p>
+                        </div>
+                        <span class="work-meta">truper.com ↗</span>
+                    </a>
+
+                    <a class="work-row work-row--gmarketing" href="https://www.garcinimarketing.com/" target="_blank" rel="noopener">
+                        <span class="work-index"></span>
+                        <div class="work-main">
+                            <h3>G Marketing</h3>
+                            <p class="work-role">Design Coordinator</p>
+                        </div>
+                        <span class="work-meta">garcinimarketing.com ↗</span>
+                    </a>
+
+                    <a class="work-row work-row--roybad" href="https://pickystore.com.mx/" target="_blank" rel="noopener">
+                        <span class="work-index"></span>
+                        <div class="work-main">
+                            <h3>Grupo Roybad</h3>
+                            <p class="work-role">Digital Experience &amp; Content Analyst</p>
+                        </div>
+                        <span class="work-meta">pickystore.com.mx ↗</span>
+                    </a>
+                </ol>
             </div>
-        </div>
+        </section>
 
-        <a href="https://www.truper.com" target="_blank" class="project-card truper">
-            <div class="card-content">
-                <h3>Grupo<br>Truper</h3>
-                <p>Product designer<br>Jr.</p>
+        <section class="contact" id="contact">
+            <div class="section-inner contact-inner">
+                <h2 class="contact-title">Let's work together.</h2>
+                <p class="contact-sub">Open to product design, front-end and full-stack roles — in Ciudad de México or elsewhere.</p>
+
+                <div class="contact-row">
+                    <button class="email-copy" id="email-copy" type="button" data-email="caguadarramag@gmail.com">
+                        caguadarramag@gmail.com
+                        <span class="email-copy-status" id="email-copy-status" aria-live="polite"></span>
+                    </button>
+                </div>
+
+                <ul class="contact-links">
+                    <li><a href="https://drive.google.com/file/d/127hzUkskkWwn6q4sKVj9PHwUbSVT4kI9/view?usp=sharing" target="_blank" rel="noopener">Résumé</a></li>
+                    <li><a href="https://github.com/caradguadarrama" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/carlosaguadarrama/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.behance.net/gallery/231107607/CREATIVE-PORTFOLIO" target="_blank" rel="noopener">Behance</a></li>
+                </ul>
             </div>
-        </a>
-
-        <a href="https://www.garcinimarketing.com/" target="_blank" class="project-card g-marketing">
-            <div class="card-content">
-                <h3>G<br>Marketing</h3>
-                <p>Project manager Jr.</p>
-            </div>
-        </a>
-
-        <a href="https://pickystore.com.mx/" target="_blank" class="project-card roybad">
-            <div class="card-content">
-                <h3>Grupo<br>Roybad</h3>
-                <p>Digital experience & content analyst</p>
-            </div>
-        </a>
-    </div>
-</section>
-
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Carlos Adrian Guadarrama.</p>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
 </body>
 
-<footer class="footer">
-        <div class="footer-content">LET'S WORK <br>
-        TOGETHER</div>
-        <nav>
-            <ul>
-                <li><a href="https://drive.google.com/file/d/127hzUkskkWwn6q4sKVj9PHwUbSVT4kI9/view?usp=sharing" target="_blank">Resume</a></li>
-                <li><a href=" https://github.com/caradguadarrama" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/carlosaguadarrama/" target="_blank">Linkedin</a></a></li>
-            </ul>
-        </nav>
-    
-</footer>
-
- 
-<script src="assets/main.js" defer></script>
 </html>
